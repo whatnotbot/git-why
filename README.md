@@ -148,6 +148,8 @@ Exit status `0` means a report was produced. Operational failures return `1`; in
 
 [CONTRIBUTING.md](CONTRIBUTING.md) lists the local checks and pull-request expectations. Security reports belong in the private channel described in [SECURITY.md](SECURITY.md). Project conduct is covered by [CODE_OF_CONDUCT.md](CODE_OF_CONDUCT.md).
 
+The [production-readiness report](https://github.com/whatnotbot/git-why/blob/main/output/pdf/production-readiness-report.pdf) records the release checks, remote-install test, and known limits for version 0.1.0.
+
 ## License
 
 MIT. See [LICENSE](LICENSE).

@@ -7,6 +7,7 @@ description = "Show the recorded evidence behind a line of code"
 license = "MIT"
 repository = "https://github.com/whatnotbot/git-why"
 readme = "README.md"
+exclude = ["output/"]
 keywords = ["git", "blame", "history", "cli", "developer-tools"]
 categories = ["command-line-utilities", "development-tools"]
 

@@ -340,9 +340,9 @@ fn shallow_clone_marks_history_incomplete() {
 
     let parent = tempfile::tempdir().unwrap();
     let clone = parent.path().join("shallow");
-    let source = format!("file://{}", origin.path().display());
     let output = Command::new("git")
-        .args(["clone", "-q", "--depth", "1", &source])
+        .args(["clone", "-q", "--depth", "1", "--no-local"])
+        .arg(origin.path())
         .arg(&clone)
         .output()
         .unwrap();
