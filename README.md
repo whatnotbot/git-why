@@ -1,11 +1,19 @@
-<div align="center">
-  <img src="assets/git-why.svg" alt="git-why: ask Git why a line exists" width="760">
+<h1 align="center">git-why</h1>
 
-  [![CI](https://github.com/whatnotbot/git-why/actions/workflows/ci.yml/badge.svg)](https://github.com/whatnotbot/git-why/actions/workflows/ci.yml)
-  [![License: MIT](https://img.shields.io/badge/license-MIT-2f81f7.svg)](LICENSE)
-</div>
+<p align="center"><strong>Ask Git why a line exists.</strong></p>
 
-`git-why` reads local Git history for one line of code. It prints the commit that last changed the line, earlier line-history commits, and issue references found in commit messages.
+<p align="center">
+  <img src="assets/git-why.svg" alt="A source line, the git why command, and the recorded commit reason" width="960">
+</p>
+
+<p align="center">
+  <a href="https://github.com/whatnotbot/git-why/actions/workflows/ci.yml"><img src="https://github.com/whatnotbot/git-why/actions/workflows/ci.yml/badge.svg" alt="CI"></a>
+  <a href="LICENSE"><img src="https://img.shields.io/badge/license-MIT-2f81f7.svg" alt="License: MIT"></a>
+</p>
+
+Point `git why` at a tracked line. It shows the commit message, earlier edits, and issue references behind that line. Everything stays local.
+
+## Example
 
 ```console
 $ git why src/auth.rs:2
