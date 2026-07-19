@@ -1,0 +1,28 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="920" height="260" viewBox="0 0 920 260" role="img" aria-labelledby="title description">
+  <title id="title">git-why</title>
+  <desc id="description">A terminal window showing git why and a concise answer from commit history.</desc>
+  <defs>
+    <linearGradient id="background" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#0d1117"/>
+      <stop offset="1" stop-color="#161b22"/>
+    </linearGradient>
+    <filter id="shadow" x="-10%" y="-15%" width="120%" height="135%">
+      <feDropShadow dx="0" dy="10" stdDeviation="12" flood-color="#010409" flood-opacity="0.48"/>
+    </filter>
+  </defs>
+  <rect width="920" height="260" rx="26" fill="#f6f8fa"/>
+  <g filter="url(#shadow)">
+    <rect x="28" y="24" width="864" height="212" rx="15" fill="url(#background)" stroke="#30363d"/>
+    <path d="M28 64h864" stroke="#30363d"/>
+    <circle cx="52" cy="44" r="6" fill="#ff7b72"/>
+    <circle cx="73" cy="44" r="6" fill="#d29922"/>
+    <circle cx="94" cy="44" r="6" fill="#3fb950"/>
+  </g>
+  <g font-family="ui-monospace, SFMono-Regular, Menlo, Consolas, monospace" font-size="20">
+    <text x="54" y="105" fill="#8b949e">$</text>
+    <text x="79" y="105" fill="#f0f6fc">git why src/auth.rs:2</text>
+    <text x="54" y="144" fill="#58a6ff" font-weight="700">RECORDED REASON</text>
+    <text x="54" y="177" fill="#f0f6fc">Accept small clock differences between hosts.</text>
+    <text x="54" y="210" fill="#8b949e">c11e160e · Maya Chen · #42</text>
+  </g>
+</svg>

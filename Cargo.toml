@@ -1,0 +1,28 @@
+[package]
+name = "git-why"
+version = "0.1.0"
+edition = "2021"
+rust-version = "1.85"
+description = "Show the recorded evidence behind a line of code"
+license = "MIT"
+repository = "https://github.com/whatnotbot/git-why"
+readme = "README.md"
+keywords = ["git", "blame", "history", "cli", "developer-tools"]
+categories = ["command-line-utilities", "development-tools"]
+
+[[bin]]
+name = "git-why"
+path = "src/main.rs"
+
+[dependencies]
+clap = { version = "4.5", features = ["derive"] }
+serde = { version = "1", features = ["derive"] }
+serde_json = "1"
+
+[dev-dependencies]
+tempfile = "3"
+
+[profile.release]
+codegen-units = 1
+lto = "thin"
+strip = "symbols"
