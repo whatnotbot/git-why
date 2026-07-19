@@ -386,6 +386,7 @@ fn rejects_symbolic_link_aliases() {
     assert!(stderr(&output).contains("symbolic link"));
 }
 
+#[cfg(not(windows))]
 #[test]
 fn wildcard_characters_in_filenames_are_literal() {
     let repository = Repository::new();
